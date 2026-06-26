@@ -1,0 +1,58 @@
+<div>
+  <div class="flex items-center justify-between mb-6">
+    <div>
+      <h1 class="text-xl font-bold text-gray-900">My Attendance</h1>
+      <p class="text-sm text-gray-500 mt-1">View your attendance history</p>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="text-right">
+        <p class="text-xs text-gray-500">Overall Rate</p>
+        <p class="text-2xl font-bold text-primary-600" id="overall-rate">—</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-3 mb-6">
+    <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
+      <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-1">
+        <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <p class="text-lg font-bold text-green-600" id="stat-present">0</p>
+      <p class="text-xs text-gray-500">Present</p>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
+      <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-1">
+        <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </div>
+      <p class="text-lg font-bold text-red-600" id="stat-absent">0</p>
+      <p class="text-xs text-gray-500">Absent</p>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
+      <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-1">
+        <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <p class="text-lg font-bold text-amber-600" id="stat-excused">0</p>
+      <p class="text-xs text-gray-500">Excused</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-gray-50 text-left text-gray-500 font-medium">
+            <th class="px-4 py-3">Date</th>
+            <th class="px-4 py-3">Specialty</th>
+            <th class="px-4 py-3">Period</th>
+            <th class="px-4 py-3">Lecturer</th>
+            <th class="px-4 py-3 text-center">Status</th>
+            <th class="px-4 py-3 text-right">Confidence</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100" id="attendance-table-body">
+          <tr><td colspan="6" class="px-4 py-8 text-center text-gray-400">No attendance records yet</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
